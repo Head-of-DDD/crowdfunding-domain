@@ -1,0 +1,1 @@
+# Domain for Crowdfunding platform
