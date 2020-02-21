@@ -1,6 +1,6 @@
 # make for windows http://gnuwin32.sourceforge.net/packages/make.htm
 DC = docker-compose
-COMPOSER = $(DC) exec app composer
+COMPOSER = $(DC) run app composer
 
 ##help			Shows this help
 help:
@@ -26,7 +26,7 @@ down:
 
 ##test			Run tests
 test:
-	$(DC) exec app ./vendor/bin/phpunit
+	$(DC) run app ./vendor/bin/phpunit
 
 ##load			Dump the autoloader
 load:
