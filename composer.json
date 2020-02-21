@@ -8,6 +8,8 @@
         }
     ],
     "require": {
+        "php": "7.3",
+        "ext-bcmath": "*",
         "ramsey/uuid": "^3.9"
     },
     "require-dev": {
