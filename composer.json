@@ -1,0 +1,22 @@
+{
+    "name": "head-of-ddd/crowdfunding-domain",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Evgeniy Prokhorov",
+            "email": "evgwed@gmail.com"
+        }
+    ],
+    "require": {
+        "ramsey/uuid": "^3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HeadOfDDD\\Crowdfunding\\Domain\\": "src/",
+            "HeadOfDDD\\Crowdfunding\\Domain\\Tests\\": "tests/"
+        }
+    }
+}
