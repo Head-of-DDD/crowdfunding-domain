@@ -10,10 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install project in Docker
-      run: docker-compose up -d --build
-    - name: Install Composer
-      run: docker-compose exec app composer install
-    - name: Copy phpUnit
-      run: cp phpunit.xml.dist phpunit.xml
+      run: make install
     - name: Run tests
-      run: docker-compose exec app ./vendor/bin/phpunit
+      run: make test
