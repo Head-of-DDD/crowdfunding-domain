@@ -1,7 +1,7 @@
 FROM php:7.3-cli-alpine
 
-RUN apk --update add wget curl git php-curl php-openssl php-json php-phar php-dom zlibc && \
-    docker-php-ext-install zip bcmath mbstring && \
+RUN apk --update add wget curl git php-curl php-openssl php-json php-phar php-dom && \
+    docker-php-ext-install bcmath && \
     rm /var/cache/apk/* && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
